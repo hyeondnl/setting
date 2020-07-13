@@ -37,7 +37,6 @@ constexpr int INF = 1000000009;
 constexpr long long INFLL = (ll)INF * (ll)INF;
 constexpr ld EPS = 10e-9;
 using namespace std;
-
 //reading and printing
 template<typename T>
 void read(T& a) {cin >> a;}
