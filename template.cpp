@@ -29,32 +29,33 @@
 #define REP(in, n) FOR(in, 0, n)
 #define CLR(a, x) memset(a, x, sizeof(a))
 #define SIZE(x) ((int)x.size())
-#define ld long double
-#define uchar unsigned char
-#define uint unsigned int
-#define ulong unsigned long
+typedef long double ld;
+typedef unsigned char u_char;
+typedef unsigned int u_int;
+typedef unsigned double u_double;
+typedef unsigned long u_long;
 constexpr int INF = 1000000009;
 constexpr long long INFLL = (ll)INF * (ll)INF;
 constexpr ld EPS = 10e-9;
 using namespace std;
 //reading and printing
-template<typename T>
+template<class T>
 void read(T& a) {cin >> a;}
-template<typename T>
+template<class T>
 void read(vector<T>& v, int n) {int tmp; REP(i, n) {read(tmp); v.pb(tmp);};}
-template<typename T, typename V>
+template<class T, class V>
 void read(pair<T, V>& p) {read(p.first); read(p.second);}
-template<typename T>
+template<class T>
 void println(const T& a) {cout << a << "\n";}
 void println(const char *s) {printf("%s\n", s);}
-template<typename T>
+template<class T>
 void print(const T& a) {cout << a << " ";}
-template<typename T>
+template<class T>
 void println(const vector<T>& v) {for (const auto &i : v) print(i); cout << "\n";}
-template<typename T>
+template<class T>
 void print(const vector<T>& v) {for (const auto &i : v) print(i); cout << " ";}
-template<typename T, typename V>
+template<class T, class V>
 void println(const pair<T, V>& p) {print(p.first); println(p.second);}
-template<typename T, typename V>
+template<class T, class V>
 void print(const pair<T, V>& p) {print(p.first); print(p.second);}
 /////////////////////////////////////////////////////////////////////////
